@@ -1,0 +1,53 @@
+@import url('//fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap');
+
+/* Reset */
+* { margin: 0; padding: 0; }
+ul { list-style-type: none; }
+
+/* Fonts */
+body {
+  font-family: 'Baloo Tamma 2', Helvetica, sans-serif;
+}
+
+/* Main colors */
+body, a, a:visited {
+  background-color: #232b2f;
+  color: #edebd7;
+}
+a:hover, a:active {
+  color: #ef8a17;
+}
+
+/* Main structure */
+#content {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+/* Element styles */
+
+h2 { text-transform: uppercase; }
+
+a { text-decoration: underline; }
+
+hr {
+  margin: 20px 0;
+  border: 0 none;
+  border-top: 2px dotted #edebd7;
+}
+
+/* List styles */
+
+ul#elsewhere {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+ul#elsewhere li {
+  display: inline;
+}
+
+ul#projects li {
+  margin: 20px 0;
+}
