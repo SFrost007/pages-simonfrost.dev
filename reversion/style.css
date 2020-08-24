@@ -1,0 +1,293 @@
+html {
+	height: 100%;
+}
+
+body {
+	background: url(pattern.png) center center repeat fixed;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	
+	color: white;
+	font-family: 'Russo One', sans-serif;
+	font-size: 0.9em;
+	text-shadow: 0 1px #333;
+}
+
+a {
+	text-decoration: none;
+	color: orange;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: white;
+}
+
+#bgoverlay {
+	width: 100%;
+	height: 100%;
+	opacity: 0.2;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+			
+	background: #ffffff; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #000000 60%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 60%, color-stop(0%,#ffffff), color-stop(60%,#000000)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%,#000000 60%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover, #ffffff 0%,#000000 60%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover, #ffffff 0%,#000000 60%); /* IE10+ */
+	background: radial-gradient(ellipse at center, #ffffff 0%,#000000 60%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#phone {
+	position: relative;
+	margin: 0 auto;
+	width: 250px;
+	height: 489px;
+	background: url(iphone-bg-33.png) top left no-repeat;
+}
+			
+	#phone #shine {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 250px;
+		height: 489px;
+		background: url(iphone-shine-33.png) top left no-repeat;
+		z-index: 100;
+	}
+			
+	#phone #screen {
+		position: absolute;
+		width: 213px;
+		height: 320px;
+		left: 20px;
+		top: 88px;
+	}
+	
+		#phone #screen ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			overflow: hidden;
+			width: 213px;
+			height: 320px;
+		}		
+
+			#phone #screen ul li {
+				display: inline;
+				float: left;
+				width: 213px;
+				height: 320px;
+			}
+
+		#phone #screen img {
+			width: 100%;
+			height: 100%;
+		}
+
+		#phone #screen .carousel-wrap {
+			height: 100% !important;
+			width: 100% !important;
+		}
+	
+	#screen1 { background: url(screen1-33.png) center center no-repeat; }
+	#screen2 { background: url(screen2-33.png) center center no-repeat; }
+	#screen3 { background: url(screen3-33.png) center center no-repeat; }
+	#screen4 { background: url(screen4-33.png) center center no-repeat; }
+
+
+#blurb {
+	text-align: justify;
+}
+
+	#blurb #logo {
+		text-indent: -100000px;
+		background: url(logo.png) center center no-repeat;
+		height: 57px;
+		margin-top: 0;
+	}
+
+	#blurb .doublemargin {
+		margin: 2.5em 0;
+	}
+
+	#blurb blockquote {
+		font-style: italic;
+	}
+
+	#blurb p {
+		position: relative;
+		padding: 0 20px;
+	}
+
+#footer {
+	padding: 30px 0;
+	text-align: center;
+	color: #888;
+}
+	
+#appstorelink {
+	display: block;
+	width: 145px;
+	height: 50px;
+	margin: 80px auto;
+	background: url(appstorebadge.png) top left no-repeat;
+	text-indent: -10000px;
+}
+
+	#appstorelink img {
+		border: 0 none;
+	}
+	
+#comingsoon {
+	position: absolute;
+	left: 50%;
+	margin: -170px 0 0 -98px;
+}
+
+
+/* Desktop style */
+@media only screen
+and (min-width:800px) {
+
+	body {
+		min-height: 600px;
+	}
+
+	#content {
+		position: absolute;
+		width: 800px;
+		height: 550px;
+	}
+			
+	#blurb {
+		position: relative;
+		width: 500px;
+		height: 489px;
+	}
+	
+	#appstorelink {
+		position: absolute;
+		bottom: 0px;
+		left: 50%;
+		margin-left: -72px;
+		margin-bottom: 0;
+	}
+
+	#comingsoon {
+		position: absolute;
+		bottom: -20px;
+		left: 50%;
+		margin-top: -110px;
+	}
+			
+	#footer {
+		clear: both;
+		padding: 30px 0 0 0;
+	}
+}
+
+
+/* Centered Desktop style - horizontal */
+@media only screen
+and (min-width:800px) {
+
+	#content {
+		left: 50%;
+		margin-left: -400px;
+	}
+	
+	#phone {
+		float: right;
+		margin: 0 40px 0 0;
+	}
+	
+	#blurb {
+		float: right;
+	}
+}
+
+/* Centered Desktop style - vertical */
+@media only screen
+and (min-width:800px)
+and (min-height:550px) {
+
+	#content {
+		top: 50%;
+		margin-top: -275px;
+	}
+}
+
+
+/* BIG screens */
+@media only screen
+and (min-width:1200px)
+and (min-height:900px) {
+	
+	#content {
+		width: 930px;
+		height: 800px;
+		margin-left: -465px;
+		margin-top: -400px;
+	}
+	
+	#blurb #logo {
+		background: url(logo-500.png) center center no-repeat;
+	}
+	
+	#phone {
+		width: 380px;
+		height: 744px;
+		background: url(iphone-bg.png) top left no-repeat;
+	}
+	
+	#phone #shine {
+		width: 380px;
+		height: 744px;
+		background: url(iphone-shine.png) top left no-repeat;
+	}
+	
+	#phone #screen {
+		width: 320px;
+		height: 480px;
+		left: 31px;
+		top: 135px;
+	}
+	
+	#phone #screen ul {
+		width: 320px;
+		height: 480px;
+	}		
+
+	#phone #screen ul li {
+		width: 320px !important;
+		height: 480px !important;
+	}
+	
+	#blurb {
+		height: 744px;
+	}
+	
+	#blurb #logo {
+		padding: 30px 0;
+	}
+	
+	#appstorelink {
+		width: 289px;
+		height: 100px;
+		background: url(appstorebadge-100.png) top left no-repeat;
+		margin-left: -145px;
+		margin-bottom: 90px;
+	}
+	
+	#screen1 { background: url(screen1.png) center center no-repeat; }
+	#screen2 { background: url(screen2.png) center center no-repeat; }
+	#screen3 { background: url(screen3.png) center center no-repeat; }
+	#screen4 { background: url(screen4.png) center center no-repeat; }
+}
+
