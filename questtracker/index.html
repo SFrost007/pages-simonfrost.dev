@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Leamington Quest Tracker - Pokemon Go</title>
+  <style type="text/css">
+    /* Styling */
+    body {
+      font-family: Helvetica, sans-serif;
+      background-color: rgb(84, 162, 235);
+    }
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+    #iconheader img {
+      border-radius: 10%;
+      box-shadow: 0 5px 10px 0px #333
+    }
+    #iconheader, #textheader, #appstores {
+      text-align: center;
+    }
+
+    /* Hover animation on app store links */
+    #appstores a:hover img {
+      transition: all 200ms ease-in-out;
+      transform: scale(1.05);
+    }
+
+    /* Footer styling */
+    #footer ul { list-style-type: none; margin: 0; padding: 0; text-align: center; }
+    #footer li { display: inline; padding: 0 20px; }
+
+    /* Structure */
+    html, body { height: 100%; margin: 0; padding: 0; }
+    body { display: flex; flex-direction: column; }
+    #content { margin: auto; }
+
+    #content, #footer { padding: 20px 0; }
+    #iconheader img { max-width: 280px; }
+    #appstores img { height: 50px; margin: 0 20px; }
+
+    /* Desktop layout */
+    @media screen and (min-aspect-ratio: 1/1) {
+      #iconheader, #textheader, #appstores {
+        float: left;
+        width: 50%;
+      }
+    }
+
+    /* iPhone layout */
+    @media screen and (max-aspect-ratio: 1/1) {
+      #iconheader, #textheader, #appstores {
+        float: none;
+        width: 100%;
+      }
+    }
+  </style>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+  <div id="content">
+    <div id="iconheader">
+      <img src="images/logo.png">
+    </div>
+    <div id="textheader">
+      <h1>Leamington<br/>Quest Tracker</h1>
+    </div>
+    <div id="appstores">
+      <a href="https://itunes.apple.com/us/app/leamington-quest-tracker/id1454048883?ls=1&mt=8" class="appstore_dl"><img src="images/store-apple.png"></a>
+      <a href="https://play.google.com/store/apps/details?id=com.orangeninja.questtracker" class="playstore_dl"><img src="images/store-google.png"></a>
+    </div>
+  </div>
+  <div id="footer">
+    <ul>
+      <li><a href="https://twitter.com/sfrost007">Contact</a></li>
+      <li><a href="/privacy/">Privacy</a></li>
+    </ul>
+  </div>
+</body>
+</html>
