@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Order Book</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style type="text/css">
+      /* Reset */
+      * { margin: 0; padding: 0; }
+
+      /* Global styles */
+      html { background-color: #62CCB3; color: white; }
+      body { font-family: "Avenir Next", sans-serif; }
+      .clearfix { clear: both; }
+
+      /* Font sizes */
+      #headbanner h1 { font-size: 24pt; font-weight: bold; }
+      #headbanner h2 { font-size: 16pt; font-weight: normal; }
+      h3 { font-size: 18pt; }
+      p, li { font-size: 16pt; }
+      #privacy p, #footer p { font-size: 12pt; }
+
+      /* Spacing etc */
+      body>div { padding: 20px; }
+      div>h3:not(:first-child) { margin-top: 20px; }
+      ul { margin: 0 20px; list-style-type: square;}
+      li { margin-bottom: 0.5em; }
+      p { margin-bottom: 0.8em; }
+
+      /* Top sticky banner style */
+      #headbanner { position: sticky; top: 0; left: 0; right: 0; background-color: #62CCB3; }
+      #headbanner h1 { margin-bottom: 0px; }
+      #headbanner h2 { margin: 0 0 0 20px; }
+      #headbanner a.appstore { float: right; }
+
+      /* Image styles */
+      #heroimage { height: 600px; background: center / cover no-repeat url('images/hero.jpg'); }
+      a.appstore img { width: 200px; }
+
+      /* Section styles */
+
+      #blurb { background-color: #6290C3; }
+      #blurb a.appstore img { display: block; margin: 0 auto; }
+
+      div#privacy { background-color: #F48529; }
+
+      #footer p { text-align: center; }
+      #footer a, #footer a:visited { color: #6290C3; }
+
+      /* Desktop-sized screenshot style */
+      @media screen and (min-width: 480px) {
+        img.screenshot { float: right; width: 200px; margin: 20px 20px 0 0; }
+        .nodesktop { display: none; }
+      }
+      /* Hide consecutive screenshots based on window width */
+      @media screen and (max-width: 1000px) { .screenshot+.screenshot+.screenshot { display: none; } }
+      @media screen and (max-width: 700px) { .screenshot+.screenshot { display: none; } }
+      /* Mobile-sized screenshot style */
+      @media screen and (max-width: 480px) {
+        img.screenshot { width: 80%; margin: 20px auto; display: block; }
+        .nomobile { display: none; }
+      }
+    </style>
+  </head>
+  <body>
+
+    <div id="headbanner">
+      <a href="https://apps.apple.com/app/id1479348629" class="nomobile appstore">
+        <img src="images/appstore.png" alt="Download on the App Store"/>
+      </a>
+      <h1>Order Book</h1>
+      <h2>Create orders on the go</h2>
+    </div>
+
+    <div id="heroimage">
+
+    </div>
+
+    <div id="blurb">
+      <p>Order Book is a sales rep's best friend, allowing customer orders to be taken quickly and easily on the road.</p>
+      <img src="images/screen_neworder.png" class="screenshot"/>
+      <img src="images/screen_products.png" class="screenshot"/>
+      <img src="images/screen_settings.png" class="screenshot"/>
+      <h3>Features</h3>
+      <ul>
+        <li>Import customer and product data from CSV</li>
+        <li>Deal in any number of currencies</li>
+        <li>Add price overrides, remembered per-customer</li>
+        <li>Send orders by email, export as PDF/CSV, or just save within Order Book</li>
+      </ul>
+      <img src="images/screen_settings.png" class="screenshot nodesktop"/>
+      <a href="https://apps.apple.com/app/id1479348629" class="nodesktop appstore">
+        <img src="images/appstore.png" alt="Download on the App Store"/>
+      </a>
+      <div class="clearfix"></div>
+    </div>
+
+    <div id="privacy">
+      <h3>Privacy</h3>
+      <p>I take your and your customers' privacy very seriously, that's why this app contains <em>no</em> analytics, third party libraries or data harvesting.</p>
+      <p><em>Your</em> data stays on <em>your</em> device, full stop.</p>
+      <p>If you contact me for support through the app, you will be given the option of attaching your data if it's relevant to your problem. This will <em>only</em> be used to help diagnose any issues.</p>
+    </div>
+
+    <div id="footer">
+      <p>Order Book. Copyright 2020 <a href="https://simonfrost.dev">Simon Frost</a></p>
+    </div>
+  </body>
+</html>
+
