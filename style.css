@@ -7,6 +7,7 @@ ul { list-style-type: none; }
 /* Fonts */
 body {
   font-family: 'Baloo Tamma 2', Helvetica, sans-serif;
+  line-height: 1.2em;
 }
 
 /* Main colors */
@@ -35,6 +36,14 @@ hr {
   margin: 20px 0;
   border: 0 none;
   border-top: 2px dotted #edebd7;
+}
+
+/* Header style */
+
+div#intro img#avatar {
+  float: left;
+  height: 80px;
+  margin-right: 20px;
 }
 
 /* List styles */
