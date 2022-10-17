@@ -1,4 +1,5 @@
 {
+  "applinks": {},
   "webcredentials": {
     "apps": [ "teamid.bundle.id.here" ]
   }
