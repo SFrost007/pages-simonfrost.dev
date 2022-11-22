@@ -1,7 +1,0 @@
-{
-  "applinks": { "details": [] },
-  
-  "webcredentials": {
-    "apps": [ "teamid.bundle.id.here" ]
-  }
-}
